@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nsay_hello\n\n say_hello (to)\n\nSay hello to somebody\n\nfrom fastcore.test import *\n\n\nsource\n\n\nfoo\n\n foo ()\n\n\ntest_eq(say_hello('Isaac'), 'Hello Isaac!')"
+  },
+  {
+    "objectID": "export.html",
+    "href": "export.html",
+    "title": "core",
+    "section": "",
+    "text": "_test_file = \"00_core.ipynb\"\n\n\n\nExportTestProc\n\n ExportTestProc ()\n\nA test proc that watches for #|default_exp and #|test\n\n\n\nget_directive\n\n get_directive (cell, key, default=None)\n\nExtract a top level directive from cell\n\ndef _mark_test(s):\n    ft = exec_new(\"import fastcore.test as ft\")[\"ft\"].__all__\n    kinds = [(o,f'ft.{o}') for o in ft if o.startswith(\"test_\")]\n    for k,v in kinds: s = s.replace(k,v)\n    return s\n\n\n\n\nconvert_pytest\n\n convert_pytest (cell, unittest=False)\n\nWraps cell contents into a pytest function\n\n\n\nconstruct_imports\n\n construct_imports (nb, unittest=False)\n\nGenerates the test imports for the notebook\n\n\n\ncreate_test_modules\n\n create_test_modules (path, dest, debug=False, mod_maker=<class\n                      'nbdev.maker.ModuleMaker'>, unittest=False)\n\nCreates test files from path, optionally with unittest support\n\ncreate_test_modules(_test_file, \"tmp\")\n\nNameError: name 'self' is not defined"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbdev-hello-world",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "nbdev-hello-world",
+    "section": "Install",
+    "text": "Install\npip install nbdev_hello_world"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbdev-hello-world",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2"
+  }
+]
