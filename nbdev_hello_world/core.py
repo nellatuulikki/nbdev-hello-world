@@ -10,7 +10,6 @@ __all__ = ['ExportTestProc', 'get_directive', 'convert_pytest', 'construct_impor
 from nbdev.process import *
 from nbdev.imports import *
 from nbdev.maker import *
-#from nbdev.process import Processor
 
 # %% ../nbs/01_export.ipynb 5
 from collections import defaultdict
